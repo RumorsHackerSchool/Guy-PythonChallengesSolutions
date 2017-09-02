@@ -1,0 +1,17 @@
+'''
+Task
+Read an integer . For all non-negative integers , print . See the sample for details.
+
+Input Format
+
+The first and only line contains the integer, .
+
+'''
+
+if __name__ == '__main__':
+    n = int(raw_input())
+
+
+
+for i in range(n):
+    print i**2

@@ -19,3 +19,22 @@ If you have time, come back to this problem
 after you've had a break and cleared your head.
 
 '''
+
+s = str(input("type your string: "))
+s = s.lower()
+alphabetical = 'abcdefghijklmnopqrstuvwxyz'
+
+def isAlphabetical(s):
+    newStr = ''
+    for i in range(len(s)):
+        if i == len(s)-1:
+            return newStr
+        elif s[i] > s[i+1]:
+            continue
+        else:
+            newStr += s[i]
+    return newStr
+
+for lop in range(len(s)):
+    isAlphabetical(s[lop:])
+

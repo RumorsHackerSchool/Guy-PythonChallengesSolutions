@@ -44,17 +44,26 @@ string1 = ''
 
 for lop in range(len(s)):
     if isInAlphabeticalOrder(s[lop:]):
+        print ('in the lop')
+        print (s[lop])
         string1 += s[lop]
     elif s[lop] > s[lop-1]:
         string1 += s[lop]
+        print("in the elif")
         list1.append(string1)
         string1 = ''
     else:
+        print('in the else')
+        print(string1)
         string1 += s[lop]
         list1.append(string1)
         string1 = ''
+        print(string1)
 
+print(string1)
+print (list1)
 
+print('check')
 maxlength = max(len(check_longest) for check_longest in list1)
 longest_strings = [s for s in list1 if len(s) == maxlength]
 if len(longest_strings) > 1:

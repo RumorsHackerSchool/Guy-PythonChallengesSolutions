@@ -21,4 +21,5 @@ def parse_rpn(expression):
     return stack.pop()
 
 expression = raw_input("Please type RPM: ")
+print(type(expression))
 print (parse_rpn(expression))

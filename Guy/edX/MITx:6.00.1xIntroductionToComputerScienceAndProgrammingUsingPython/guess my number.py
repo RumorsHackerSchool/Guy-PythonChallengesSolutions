@@ -9,15 +9,27 @@ The program works as follows: you (the user) thinks of an integer between 0 (inc
 
 print("Please think of a number between 0 and 100!")
 guess = 50
+secret_number = 50
 print("Is your secret number 50?")
+ans = ''
 ans = str(input(
-    "Enter 'h' to indicate the guess is too high. Enter 'l' to indicate the guess is too low. Enter 'c' to indicate I guessed correctly."))
+    "Enter 'h' to indicate the guess is too high. Enter 'l' to indicate the guess is too low. Enter 'c' to indicate I guessed correctly.\n"))
 while ans != 'c':
     if ans == 'h':
-        guess = guess/2
-        print("Is your secret number" + str(guess) + "?")
-        ans = str(input("Enter 'h' to indicate the guess is too high. Enter 'l' to indicate the guess is too low. Enter 'c' to indicate I guessed correctly."))
+        secret_number = int(secret_number/2)
+        guess -= secret_number
+        print("Is your secret number " + str(guess) + "?")
+        ans = str(input("Enter 'h' to indicate the guess is too high. Enter 'l' to indicate the guess is too low. Enter 'c' to indicate I guessed correctly.\n"))
 
     elif ans == 'l':
+        secret_number = int(secret_number/2)
+        guess += secret_number
+        print("Is your secret number " + str(guess) + "?")
+        ans = str(input("Enter 'h' to indicate the guess is too high. Enter 'l' to indicate the guess is too low. Enter 'c' to indicate I guessed correctly.\n"))
+    else:
+        ans = str(input(
+            "Enter 'h' to indicate the guess is too high. Enter 'l' to indicate the guess is too low. Enter 'c' to indicate I guessed correctly.\n"))
 
 
+
+print("Game over. Your secret number was: " + str(guess))

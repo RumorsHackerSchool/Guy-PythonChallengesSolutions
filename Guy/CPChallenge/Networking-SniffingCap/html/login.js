@@ -16,10 +16,12 @@
   //----------------------------------------------
   // Validation
   $("#login-form").validate({
+	
     rules: {
       lg_username: "required",
       lg_password: "required",
     },
+
     errorClass: "form-invalid"
   });
 
@@ -31,7 +33,7 @@
     {
       ws_submit_form($(this));
 
-      return false;
+      return true;
     }
   });
 

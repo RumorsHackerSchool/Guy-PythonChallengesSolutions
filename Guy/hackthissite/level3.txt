@@ -1,0 +1,3 @@
+the password is in file named password.php
+you can see it on the source page
+pass is: 896aba88

@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0046)https://www.hackthissite.org/missions/basic/4/ -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <title>Hack This Site!</title>
+  <meta name="verify-v1" content="s/YXn7eQrMBoF9PL5jLJDiWpAxEXpJzE9JLg/zM4C2Y=">
+  
+  <meta name="author" content="guy" >
+  <meta name="description" content="HackThisSite! is a legal and safe network security resource where users test their hacking skills on various challenges and learn about hacking and network security. Also provided are articles, comprehensive and active forums, and guides and tutorials. Learn how to hack!">
+  <meta name="keywords" content="challenge, computer, culture, deface, digital, ethics, games, guide, hack, hack forums, hacker, hackers, hacking, hacking challenges, hacking forums, mission, net, programming, radical, revolution, root, rooting, security, site, society, tutorial, tutorials, war, wargame, wargames, web, website">
+  <meta property="og:title" content="Hack This Site">
+  <meta property="og:description" content="A legal and safe web application security educational resource.">
+  <meta property="og:image" content="https://data.htscdn.org/themes/Dark/images/training.jpg">
+  <link rel="icon" href="https://data.htscdn.org/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="https://data.htscdn.org/favicon.ico" type="image/x-icon">
+  <link href="./level4_files/Dark.css" rel="stylesheet" type="text/css">
+  <link href="https://www.hackthissite.org/pages/hts.rss.php" rel="alternate" type="application/rss+xml" title="HTS RSS feed">
+  <!--<base href="https://www.hackthissite.org">--><base href=".">
+  <script type="text/javascript" async="" defer="" src="./level4_files/piwik.js"></script><script type="text/javascript" src="./level4_files/jquery-1.8.1.min.js"></script>
+  </head>
+<body>
+<span id="blank-element" style="display: none"></span>
+
+<div id="topbar" align="center">
+<a href="https://www.hackthissite.org/" id="active">HackThisSite</a> - <a href="irc://irc.hackthissite.org:+7000/">IRC</a> - <a href="https://www.hackthissite.org/forums">Forums</a> - <a href="http://radio.hackthissite.org/">Radio</a> - <a href="http://hts.io/x/http://www.cafepress.com/htsstore" target="_new">Store</a> - <a href="http://hts.io/" target="_new">URL Shortener</a>&nbsp;&nbsp;&nbsp;---&nbsp;&nbsp;&nbsp;<a href="http://hts.io/x/https://www.facebook.com/hackthissite" target="_new">Like Us</a> - <a href="http://hts.io/x/https://twitter.com/#!/hackthissite" target="_new">Follow Us</a></div>
+<div class="hts-header">
+<a href="https://www.hackthissite.org/"><img src="./level4_files/header.jpg" alt="Hack This Site" border="0"></a>
+<br>
+<a href="https://www.hackthissite.org/Wf649dwl728sW617ZaxncMH9w84vtZLm32sDcqgBdm7HbgjES43f87l92r54xV6335V60gcuds2JbDiVY0WC3h00"><img src="./level4_files/Jhgd1qial51Zq8iWU0zzoQxni5a3h3080MsDlXZT0h0Lc0e4u97c36PQ0y9W10k1h2OA4MtXjvMkYJ7HU80pnnJ57Tzo3pMAyL322SxjjMTyKgwqU9EZhLG229gt0YJWe8uozcj5ypm6y80pXAwua24AwBoNhM2Q2yzpW8C4M2y40zI08DWm4604W7u507G" alt="InfoSecAddicts.com" id="atpimg" class="abstaimg" title="InfoSecAddicts.com" border="0"></a><br>[<a href="https://www.hackthissite.org/advertise/">Advertise With HackThisSite.org</a>]</div>
+  <table width="780" border="0" cellpadding="0" cellspacing="0" class="siteheader cmTable">
+    <tbody><tr>
+      <td class="sitetopheader"><blockquote>Naked people have little or no influence on society. - Mark Twain</blockquote></td>
+    </tr>
+    <tr>
+      <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tbody><tr>
+          <td width="160" valign="top" class="navbar"><div align="center">
+            <br>
+            <div style="margin-right: 7px; border: 3px double #555555; background-color: #006600; font-weight: bold">
+<img src="./level4_files/lock.png" style="float: left; margin: 4px 0 0 5px">
+You are browsing HackThisSite over SSL
+</div>
+<br>	<div>Hello, <a href="https://www.hackthissite.org/user/view/gaidediz/">gaidediz</a><br>
+		<a href="https://www.hackthissite.org/user/edit/2328212/">Settings</a> - <a href="https://www.hackthissite.org/?logout&amp;nce=7vWVWXYg2E59vZTkzcpT0vfyzBJbyyCe11m0STolHZ">Logout</a><br><br>
+		<a class="nav" href="https://www.hackthissite.org/user/themes/"> Skin Chooser</a><br><br>
+	<a class="nav" href="http://www.hackthissite.org/forums/ucp.php?i=pm">Private Messages</a><br>
+	<a class="nav" href="https://www.hackthissite.org/pages/messages/msys/">HTS Messages Center</a><br>
+	You have 0 new messages.<br>
+	</div>
+
+	<h4 class="header">Donate</h4>
+<p>
+  <a href="https://www.hackthissite.org/donate/">
+    <img src="./level4_files/donate.png" border="0" title="Donate to HackThisSite.org" alt="Donate to HackThisSite.org">
+  </a>
+  <br>
+  HTS costs up to $300 a month to operate. We <strong>need</strong> your help!
+</p>
+<h4 class="header">Challenges</h4>
+<ul class="navigation">
+  <li><a class="nav" href="https://www.hackthissite.org/missions/basic/">Basic missions</a></li><li><a class="nav" href="https://www.hackthissite.org/missions/realistic/">Realistic missions</a></li><li><a class="nav" href="https://www.hackthissite.org/missions/application/">Application missions</a></li><li><a class="nav" href="https://www.hackthissite.org/missions/programming/">Programming missions</a></li><li><a class="nav" href="https://www.hackthissite.org/missions/phonephreaking/">Phonephreaking missions</a></li><li><a class="nav" href="https://www.hackthissite.org/missions/javascript/">Javascript missions</a></li><li><a class="nav" href="https://www.hackthissite.org/missions/forensic/">Forensic missions</a></li><li><a class="nav" href="https://www.hackthissite.org/missions/playit/extbasic/0/">Extbasic missions</a></li><li><a class="nav" href="https://www.hackthissite.org/missions/playit/stego/0/">Stego missions</a></li><li><a class="nav" href="irc://irc.hackthissite.org/htb">Irc missions</a></li></ul>
+
+<h4 class="header">Get Informed</h4><ul class="navigation"><li><a class="nav" href="https://www.hackthissite.org/blogs">Blogs</a></li><li><a class="nav" href="https://www.hackthissite.org/news">News</a></li><li><a class="nav" href="https://www.hackthissite.org/pages/articles/article.php">Articles</a></li><li><a class="nav" href="https://www.hackthissite.org/lectures">Lectures</a></li><li><a class="nav" href="https://www.hackthissite.org/pages/programs/programs.php">Useful Stuff</a></li><!--<li><a class="nav" href="ebooks">E-books</a></li>--><li><a class="nav" href="http://mirror.hackthissite.org/hackthiszine/">HackThisZine</a></li><li><a class="nav" href="https://www.hackthissite.org/"></a></li></ul><h4 class="header">Get Involved</h4><ul class="navigation"><li><a class="nav" href="https://www.hackthissite.org/donate"><span class="completed">Donate to HackThisSite!</span></a></li><li><a class="nav" href="http://www.cafepress.com/htsstore">Store</a></li><li><a class="nav" href="https://www.hackthissite.org/submit/article">Submit Article</a></li><li><a class="nav" href="https://www.hackthissite.org/pages/bugManagement/index.php">Submit Bug Report</a></li><li><a class="nav" href="https://www.hackthissite.org/submit/lecture">Submit Lecture</a></li><li><a class="nav" href="https://www.hackthissite.org/pages/programs/insert.php">Submit Useful Stuff</a></li><!--<li><a class="nav" href="/pages/showsource/loopdeloop.php">We Want You!</a></li>--><li><a class="nav" href="https://www.hackthissite.org/"></a></li></ul><h4 class="header">Communicate</h4><ul class="navigation"><li><a class="nav" href="https://www.hackthissite.org/forums">Forums</a></li><li><a class="nav" href="https://www.hackthissite.org/forums/ucp.php?i=pm">Private Messages</a></li><li><a class="nav" href="http://www.irc.hackthissite.org/idlerpg">IRC IdleRPG</a></li><li><a class="nav" href="https://www.hackthissite.org/irc/stats.php">IRC Stats</a></li><li><a class="nav" href="http://qdb.hackthissite.org/">IRC Quotes</a></li><li><a class="nav" href="https://www.hackthissite.org/user/search">Search Users</a></li><li><a class="nav" href="https://www.hackthissite.org/user/gallery">User Pictures</a></li><li><a class="nav" href="https://www.hackthissite.org/user/online">Who is Online</a></li><li><a class="nav" href="https://www.hackthissite.org/user/rankings/">Rankings</a></li><li><a class="nav" href="https://www.hackthissite.org/pages/irc/irc.php">IRC Chat</a></li><li><a class="nav" href="https://www.hackthissite.org/pages/irc/reference.php">IRC Command Reference</a></li><li><a class="nav" href="https://www.hackthissite.org/"></a></li></ul><h4 class="header">About HTS</h4><ul class="navigation"><li><a class="nav" href="https://www.hackthissite.org/info/about">About the Project</a></li><li><a class="nav" href="https://www.hackthissite.org/info/billofrights">Bill of Rights</a></li><li><a class="nav" href="https://www.hackthissite.org/info/legal">Legal Disclaimer</a></li><li><a class="nav" href="https://www.hackthissite.org/info/privacy">Privacy Statements</a></li><li><a class="nav" href="https://www.hackthissite.org/pages/info/staff">Meet the Staff</a></li><li><a class="nav" href="https://www.hackthissite.org/info/underthehood">Under the Hood</a></li><li><a class="nav" href="https://www.hackthissite.org/advertise">Advertise with HTS</a></li><li><a class="nav" href="https://www.hackthissite.org/ipv6">IPv6</a></li><li><a class="nav" href="https://www.hackthissite.org/hof">Hall of Fame</a></li><li><a class="nav" href="https://www.hackthissite.org/"></a></li></ul><h4 class="header"></h4><ul class="navigation"><li><a class="nav" href="https://www.hackthissite.org/"></a></li></ul>
+<br>
+<a href="https://www.hackthissite.org/">
+  <img src="./level4_files/hts_80x15.gif" width="80" height="15" border="0" alt="">
+</a>
+<br>
+<a class="nav" href="https://www.hackthissite.org/pages/info/linktous.php">
+  Link to us!
+</a>
+
+<h4 class="header">
+  Partners
+</h4>
+<br>
+<a target="_new" href="http://hts.io/x/http://affiliates.mozilla.org/link/banner/8528">
+  <img src="https://affiliates.mozilla.org/media/uploads/banners/ac502446d8392cea778bcdaf8b3e07f8958a0216.png" alt="Download Firefox" width="88">
+</a>
+<br>
+<a class="nav" target="_new" href="http://hts.io/x/http://www.hackbloc.org/">
+  <img src="./level4_files/linkhb.gif" border="0" alt="Hackbloc" width="88" height="31">
+</a>
+<br>
+<a class="nav" target="_new" href="http://hts.io/x/http://www.hellboundhackers.org/">
+  <img src="./level4_files/hbhlogo.jpg" width="88" height="31" border="0" alt="Hellbound Hackers">
+</a>
+<br>
+<a class="nav" target="_new" href="http://hts.io/x/https://www.netsparker.com/blog">
+  <img src="./level4_files/netsparker.gif" alt="Netsparker Security Blog" width="88" height="31" border="0">
+</a>
+<br>
+<a class="nav" target="_new" href="http://hts.io/x/http://www.acunetix.com/blog">
+  <img src="./level4_files/acunetixblog.gif" alt="Acunetix Security Blog" width="88" height="31" border="0">
+</a>
+<br>
+<a class="nav" target="_new" href="http://hts.io/x/http://www.buddyns.com">
+<img src="./level4_files/buddyns88x31.png" alt="BuddyNS Secondary DNS" width="88" height="31" border="0">
+</a>
+<br>
+
+          </div></td>
+          <td valign="top" class="sitebuffer">
+	<br>
+    <br><center>
+    <br><center><b>Level 4</b></center><br><br>This time Sam hardcoded the password into the script. However, the password is long and complex, and Sam is often forgetful. So he wrote a script that would email his password to him automatically in case he forgot. Here is the script:<br><br><center>
+    <form action="https://www.hackthissite.org/missions/basic/4/level4.php" method="post">
+    <input type="hidden" name="to" value="gaidediz@hackthissite.org"><input type="submit" value="Send password to Sam"></form></center><br><br><center><b>Password:</b><br>
+    <form action="https://www.hackthissite.org/missions/basic/4/index.php" method="post">
+    <input type="password" name="password"><br><br>
+    <input type="submit" value="submit"></form>
+</center></center></td>
+        </tr>
+      </tbody></table></td>
+    </tr>
+ <tr>
+      <td class="sitebottomheader"><img src="./level4_files/hts_bottomheadern.jpg" alt="End Footer" width="780" height="60"></td>
+    </tr>
+  </tbody></table>
+  <br>
+<div align="center" style="font-family:Verdana, Arial, Helvetica, sans-serif; font-size:10px; color:#CCCCCC">HackThisSite is is the collective work of the HackThisSite staff, licensed under a <a rel="license" href="http://hts.io/x/http://creativecommons.org/licenses/by-nc/3.0/" target="_new">CC BY-NC</a> license.<br>
+We ask that you inform us upon sharing or distributing.<br><br>
+<sub>Page Generated: Sat, 23 Sep 2017 18:58:43 +0000<br>Web Node: www2 | Page Gen: 0.047s | DB: 15q<br>Current Code Revision: <a href="https://www.hackthissite.org/CHANGELOG">v3.2.5
+ (Sun, 22 May 2016 20:29:51 +0000)</a></sub><br>
+</div>
+
+<div align="center">
+  <p>
+   <a target="_new" href="http://hts.io/x/http://creativecommons.org/licenses/by-nc/3.0/"><img src="./level4_files/cc_80x15.png" width="80" height="15" border="0" alt=""></a>
+   <a target="_new" href="http://hts.io/x/http://validator.w3.org/check?uri=referer"><img src="./level4_files/xhtml10.png" width="80" height="15" border="0" alt=""></a>&nbsp;
+   <a target="_new" href="http://hts.io/x/http://jigsaw.w3.org/css-validator/check/referer"><img src="./level4_files/css.png" width="80" height="15" border="0" alt=""></a> 
+   <a target="_new" href="http://hts.io/x/http://www.php.net/"> <img src="./level4_files/phppow.gif" width="80" height="15" border="0" alt=""></a>
+   <!--<a href="http://www.linux.com/"> <img src="../../images/linux2.gif" width="80" height="15" border="0" alt="" /></a>-->
+   <a target="_new" href="http://hts.io/x/http://www.freebsd.org/"> <img src="./level4_files/freebsd.png" width="80" height="15" border="0" alt=""></a>
+   <img src="./level4_files/counter.php" height="14" border="0" alt="Page View Counter">
+  </p>
+</div>
+<a href="http://hackthissite.org/hp.php" style="display: none;">retired</a><script type="text/javascript">
+  var _bftn_options = {
+    theme: 'slow',
+    date: new Date(2017, 7, 13),
+  };
+</script>
+<script src="./level4_files/widget.js" async=""></script>
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(["setCookieDomain", "*.hackthissite.org"]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://stats.hackthissite.org/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript>&lt;p&gt;&lt;img src="https://stats.hackthissite.org/piwik.php?idsite=1&amp;rec=1&amp;bots=1" style="border:0" alt="" /&gt;&lt;/p&gt;</noscript>
+    
+
+</body></html>

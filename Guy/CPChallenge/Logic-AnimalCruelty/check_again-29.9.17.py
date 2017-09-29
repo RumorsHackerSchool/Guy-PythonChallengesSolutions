@@ -65,6 +65,8 @@ def func(x):
 '''
 def check_dechimal(x):
     string = str(x)
+    if 0 == int(string[string.find('.')+1:]):
+        return(int(x), 1)
     float_num = x
     len_of_num_after_point = len(string[string.find('.')+1:]) # this will bring the len after ".'
     newString = string.replace(".", '')
@@ -80,7 +82,7 @@ def func(x):
 
     x = x ^ 951335252
     x = x / division
-
+    print(x)
     if (x and 255) > 83:
         x = x + 256
     x = x/39
@@ -95,6 +97,7 @@ def func(x):
             division = check_dechimal(x)[1]
 
         x = x ^ 89
+
         x = x / division
 
     return x
@@ -102,5 +105,5 @@ def func(x):
 
 
 
-print(func(112312342342342342.000000234234002))
+print(func(2))
 

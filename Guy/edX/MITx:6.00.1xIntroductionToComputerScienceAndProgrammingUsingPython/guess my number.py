@@ -13,22 +13,24 @@ secret_number = 50
 print("Is your secret number 50?")
 ans = ''
 ans = str(input(
-    "Enter 'h' to indicate the guess is too high. Enter 'l' to indicate the guess is too low. Enter 'c' to indicate I guessed correctly.\n"))
+    "Enter 'h' to indicate the guess is too high. Enter 'l' to indicate the guess is too low. Enter 'c' to indicate I guessed correctly. "))
 while ans != 'c':
     if ans == 'h':
         secret_number = int(secret_number/2)
         guess -= secret_number
         print("Is your secret number " + str(guess) + "?")
-        ans = str(input("Enter 'h' to indicate the guess is too high. Enter 'l' to indicate the guess is too low. Enter 'c' to indicate I guessed correctly.\n"))
+        ans = str(input("Enter 'h' to indicate the guess is too high. Enter 'l' to indicate the guess is too low. Enter 'c' to indicate I guessed correctly. "))
 
     elif ans == 'l':
         secret_number = int(secret_number/2)
         guess += secret_number
         print("Is your secret number " + str(guess) + "?")
-        ans = str(input("Enter 'h' to indicate the guess is too high. Enter 'l' to indicate the guess is too low. Enter 'c' to indicate I guessed correctly.\n"))
+        ans = str(input("Enter 'h' to indicate the guess is too high. Enter 'l' to indicate the guess is too low. Enter 'c' to indicate I guessed correctly. "))
     else:
+        print("Sorry, I did not understand your input.")
+        print("Is your secret number " + str(guess) + "?")
         ans = str(input(
-            "Enter 'h' to indicate the guess is too high. Enter 'l' to indicate the guess is too low. Enter 'c' to indicate I guessed correctly.\n"))
+            "Enter 'h' to indicate the guess is too high. Enter 'l' to indicate the guess is too low. Enter 'c' to indicate I guessed correctly. "))
 
 
 

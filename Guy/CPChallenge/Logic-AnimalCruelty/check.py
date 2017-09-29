@@ -22,7 +22,7 @@ func()
 
 def func(x):
 
-    x - x/2
+    x = x/2
     x = x ^ 951335252
     if (x and 255) > 83:
         x = x + 256
@@ -32,12 +32,15 @@ def func(x):
         x = x * 33
         x = x - 1
         x = x / 4
-        x = x^ 89
+        x = x ^ 89
     return x
 
 test = open('test.txt', 'w')
 lop = 0
 
+
+print(func(1002))
+'''
 while True:
     lop +=1
     x = int(str(lop) + '002')
@@ -53,3 +56,4 @@ while True:
     if func(x) == 27750:
         print("I found the ans!!! x is " + str(x))
         break
+'''

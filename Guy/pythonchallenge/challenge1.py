@@ -10,6 +10,6 @@ def replace(letter):
 list1 = []
 for letter in string1:
     list1.append(replace(letter))
-print ''.join(list1)
+print (''.join(list1))
 
 

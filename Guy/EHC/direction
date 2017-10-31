@@ -31,6 +31,21 @@ apt-get install	network-manager-pptp-gnome -y
 apt-get install	network-manager-strongswan
 apt-get install	network-manager-vpnc -y
 apt-get install network-manager-vpnc-gnome -y
-נשתמש בVPN אם נרצה כתובת סטאטית
+נשתמש בVPN אם נרצה כתובת סטאטית, כמו כן גם הכתובת שלנו תיהיה שונה לאחר הקמת הVPN
+מומלץ להגדיר VPN דרך הטרמינל (אפשר לעשות זאת דרך networkmanager אך מומלץ שלא)
+
+ניכנס לאתר שיש לו openVPN לדוגמא bookvpn ונוריד את הקבצים cert שמאפשרים לנו להתחבר לאותו VPN  חינמי,
+לאחר מכן נלך לטרמינל ניכנס לאותו מיקום של הקבצים שהורדנו לאחר שחילצנו אותם ואז נבחר את הVPN המתאים לנו כדי להתחבר אליו ונקליד את הפקודה
+openvpn --config vpnbook-ero2-tcp443.ovpn
+ החלק האחרון של הפקודה זה הקובץ שהורדנו וזה הVPN אליו נתחבר
+לאחר ניסיון התחברות מוצלח יהיה לנו גישה לרשת דרך אותו VPN ואם נעשה בדיקה what is my ip אמור להיות לנו כתובת שונה 
+חשוב בנוסף להגדיר את הDNS מחדש כדי שלא נשתמש בDNS של הISP שלנו כי אם לא נשנה את הDNS יככולים לעלות על המיקום שלנו ולכן חשוב לשנות את שרת הDNS אליו אנו נפנה את הבקשות שלנו
+נלך למיקום הבא  
+/etc/resolv.conf
+ושם נוסיף שרת FreeDNS שנמצא מהרשת 
+nameserver 4.4.4.2
+ההגדרה הזאת תבטיח שבDNSLeak יראות DNS אחר ולא את הDNS שלנו
+שינוי בקובץ הזה ישנה מיידית את הDNS אבל לא תמידית  כלומר בהפעלה הבאה יחזור הDNS הישן להיות מוגדר
+openvpn --config vpnbook
 
 

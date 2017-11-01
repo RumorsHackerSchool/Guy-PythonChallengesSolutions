@@ -313,10 +313,10 @@ done
 1. echo 1 > /proc/sys/net/ipv4/ip_forword 
 מאפשר להעביר חבילות הלאה כאילו המחשב שלנו הוא נתב, ברירת מחדש זה 0 בקובץ הזה שלא יכול להעביר נתונים הלאה
 
-2. iptable -t nat -A PREROUTING -p tcp --destination-port 80 -j REDIRECT --to-port 8080
+2. iptables -t nat -A PREROUTING -p tcp --destination-port 80 -j REDIRECT --to-port 8080
 זה למעשה הFW שיש לנו בלינוקס והוא ימיר את התעבורה בNAT, הפקודה אומרת לקחת את התעבורה ולעשות לה הפנייה מחדש לפורט 8080 במקום פורט 80
 
-3. iptable -t nat -L PREROUTING
+3. iptables -t nat -L PREROUTING
 הפקודה הזאת תציג לנו את הטבלה של מה שהגדרנו, כך נוכל לבדוק מה שהגדרנו, נוכל לראות שיש הגדרה של הפנה מחדש בTCP מפורט 80 (HTTP) לפורט 8080
 
 4. ifconfig eth0

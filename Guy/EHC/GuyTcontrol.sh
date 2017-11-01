@@ -1,3 +1,4 @@
+#!/bin/bash
 echo "Welcome to GuyTcontrol - man in the middle script."
 echo "Please type the ip of your VICTIM: "
 read VICTIM

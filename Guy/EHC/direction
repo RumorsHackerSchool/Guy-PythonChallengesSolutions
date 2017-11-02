@@ -446,6 +446,10 @@ arpspoof -i eth0 -t 10.0.2.2 -r 10.0.2.15
 
 כל פעם שנעשה שינוי לסקריפט googleSearch צריך לאתחל את squid3
 
+iptables -t nat --line-numbers -L 
+iptables -t nat -D PREROUTING <line number>
+זה כדי למחוק חוקים מתוך הטבלה של הiptables
+
 
 
 

@@ -422,6 +422,8 @@ service squid3 restart
 
 iptables -t nat -A PREROUTING -i eth0 -p tcp --destination-port 80 -j REDIRECT --to-port 3128
 
+נבצע בדיקה שזה עובד כמו שצריך
+iptables -t nat -A PREROUTING
 
 לא לשכוח להגדיר שיהיה אפשר לבצע העברה של חבילות מידע מהמחשב שלנו הלאה (כאילו אנחנו נתב)
 echo 1 > /proc/sys/net/ipv4/ip_forward

@@ -1,3 +1,26 @@
+התקנת KALI LINUX
+---------------------
+אני משתמש בVBOX
+לאחר ההתקנה יש להריץ את השורה הבאה ב/etc/apt/source.list
+deb http://http.kali.org/kali kali-rolling main contrib non-free
+
+לאחר מכן לבצע
+apt update
+apt upgrade
+
+לאחר מכן לבצע
+
+apt install -y dkms linux-headers-$(uname -r)
+אם זה לא עובד ננסה את הסוג האחרון של linux-headers
+
+לאחר מכן נכניס את הדיסק אל הguast אבל נראה שזה לא עובד ולא רץ ולכן נעשה את הדבר הבא
+cd /media/cdrom/
+cp ./VBoxLinuxAddetionals.run /home/
+cd /home
+./VBoxLinuxAddetionals.run
+
+
+
 עבודה עם TOR
 ------------------
 -הרשת האפלה מוסתרת וניתן להגיע אליה רק עם TOR בגלל שהאתרים בנויים עם סיומת onion 

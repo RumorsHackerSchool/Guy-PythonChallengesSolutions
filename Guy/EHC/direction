@@ -636,6 +636,35 @@ setoolkit
 כדי לראות איך זה מתבצע נוריד מהאתר הבא dvwa.co.uk ונוריד את הקובץ DVWA ונחלץ אותו ואת נעביר את התיקייה המחולצת לתיקיה /var/www
 לאחר מכן נמשיך בהתקנה של האתר על  המכונה שלנו 
 
+ננסה לגלוש לlocalhost ואז נראה אם האתר עובד כראוי
+במקרה שלי הייתה הודעת שגיאה על משהו שלא בסדר בקובץ הגדרות ולאחר שסידרתי את זה היה מופיע בעיה עם mysql
+
+ברירת מחדל צריך להיות מותקן mysql על המכונה שלנו אבל אם לא נבצע  את הפקודות הבאות כדי  להגדיר את מסד הנתונים שאנחנו רוצים להגדיר
+apt install mysql-server
+apt install mysql-client
+
+במקרה שלי היה מותקן mariaDB על המכונה 
+בבדיקה בגיוטהאב התברר שצריך להיות מוגדר משהו אחר נכן נקליד mysql ואנטר ואז הוא יכנס למסד נתובנים של MARIADB ואז אנחנו צריכם להגדיר את ההגדרות הבאות
+mysql> create database dvwa;
+Query OK, 1 row affected (0.00 sec)
+
+mysql> grant all on dvwa.* to dvwa@localhost identified by 'mypassword';
+Query OK, 0 rows affected, 1 warning (0.01 sec)
+
+mysql> flush privileges;
+Query OK, 0 rows affected (0.00 sec)
+
+לאחר מכן ניכנס לקובץ הבא /var/www/html/config/config.inc.php
+ונשנה את הסיסמא לmypassword ואת היוזר לdvwa
+$_DVWA[ 'db_user' ]     = 'dvwa';
+$_DVWA[ 'db_password' ] = 'mypassword';
+
+ואז ניכנס מחדש לאתר שלנו שהוא הLOCALHOST במקרה שלי לאחר לחיצת על creatdatabase נוצר מסד נתונים ומיד אחרי זה הופיע להכניס יוזר וסיסמא
+
+
+
+
+
 
 
 

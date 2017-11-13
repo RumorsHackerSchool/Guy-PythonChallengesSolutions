@@ -660,6 +660,8 @@ $_DVWA[ 'db_user' ]     = 'dvwa';
 $_DVWA[ 'db_password' ] = 'mypassword';
 
 ואז ניכנס מחדש לאתר שלנו שהוא הLOCALHOST במקרה שלי לאחר לחיצת על creatdatabase נוצר מסד נתונים ומיד אחרי זה הופיע להכניס יוזר וסיסמא
+את היוזר וסיסמא נוכל למצא בREADME 
+
 
 
 

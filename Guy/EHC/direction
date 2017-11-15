@@ -663,6 +663,16 @@ $_DVWA[ 'db_password' ] = 'mypassword';
 את היוזר וסיסמא נוכל למצא בREADME 
 
 הרעיון של האתר הזה הוא לפרוץ אותו ולכן נלך לסקשיין של Script Security ונגדיר רמת אבטחה על high כדי שיהיה דומה למקרים אמיתים של פריצת אתרים
+לאחר מכן נפעיל burpsuite זהו פרוקסי שקורא את השיחה בינינו לבין האתר ויכול למצא לנו מלא נתונים מגניבים על האתר 
+נלכך להגדרות הדפדפן שלנו ונגדיר פרוקסי (אני משתמש בFF) preferance>advance> setting>network>proxy(
+לאחר מכן נגדיר 127.0.0.1 8080
+ואז נעבוד על burpsuite ונרענן את השיחה בדפדפן והוא יקלוט לנו את הקוקי
+נעתיק ונשמור את הקוקי ונחזיר את הדפדפן לעבוד בצורה רגילה בלי פרוקסי
+Cookie: __utma=188575528.481767722.1510472966.1510472966.1510472966.1; __utmz=188575528.1510472966.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __utmc=188575528; PHPSESSID=gckjs9emg4kro1pdbv9ac655o7; security=impossible
+
+לאחר מכן נעבוד עם sqlmap עם הקוקי שיש לנו וראה אם אנחנו יכולים להשתמש בשיחה הזאת
+
+sqlmap -u "http://10.0.0.4/vulnerabilities/sqli_blind/index.php?id=3333&Submit=Submit&user_token=28b0a71aa865f3111a077bc187892fc8#" --cookie="security=impossible; PHPSESSID=gckjs9emg4kro1pdbv9ac655o7"
 
 
 

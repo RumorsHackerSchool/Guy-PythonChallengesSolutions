@@ -41,13 +41,9 @@ def do(i, s):
 
 def parse_args():
     parser = argparse.ArgumentParser()
-    print(parser)
     parser.add_argument("image", type=str, help='image file')
-    print(parser.add_argument("image", type=str, help='image file'))
     parser.add_argument("string", type=str)
-    print(parser.add_argument("string", type=str))
     parser.add_argument("out", type=str, help='png file')
-    print(parser.add_argument("out", type=str, help='png file'))
     return parser.parse_args()
 
 
@@ -60,3 +56,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+    

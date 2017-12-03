@@ -131,11 +131,11 @@
     var user = $form.find("[name=lg_username]")[0].value;
     var password = $form.find("[name=lg_password]")[0].value;
     console.log("user = " + user + ", password = " + password);
-
+	 console.log(location.hostname);
     var ws = new WebSocket("ws://" + location.hostname + ":9000/auth");
     ws.onmessage = function (e) {
       console.log(e)
-
+		console.log("hello2");
       var data;
 
       try {
@@ -144,6 +144,8 @@
         return;
       }
 
+      console.log(data);
+      console.log("hello");
       console.log(data);
 
       if (data.action == "auth") {

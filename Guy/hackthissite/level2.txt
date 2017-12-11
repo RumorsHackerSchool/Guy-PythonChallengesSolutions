@@ -1,2 +1,2 @@
-Sam dosnt upload the password file so the is no password
+Sam dosn't upload the password file so there is no password
 pass is: "blank"

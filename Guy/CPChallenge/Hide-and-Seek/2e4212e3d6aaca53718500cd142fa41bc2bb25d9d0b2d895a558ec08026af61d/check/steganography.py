@@ -50,7 +50,20 @@ def do(i, s): ##take the image and the message
     '''
 
     do2(i.size, p, "".join([chr(j) for j in mb(n1, n2, len(s) & 0xFFFF)]), 0, 0, 0)
+    print(i.size)
+    print(p)
+    print("".join([chr(j) for j in mb(n1, n2, len(s) & 0xFFFF)]), 0, 0, 0)
+    '''
+    do2 take the image size and pixel data and 
+    len(s) & 0xFFFF is 5
+    n1 is randome number between 0 and 1115
+    n2 is randome number between 0 and 1143
+    let say that mb get the following:
+    mb(287[randome], 1100[randome], 5[perminant])
     
+        
+    
+    '''
 
     x = ((((165 & 44 * 2) << 5) ^ 26) ^ 41) + 46
     do2(i.size, p, s, n1, n2, x)

@@ -11,5 +11,8 @@ b = int(input("please enter B: "))
 def rgb2hex(r, g, b):
     return '#{:02x}{:02x}{:02x}'.format(r, g, b)
 
+def hex2rgb(hexcode):
+    return tuple(map(ord, hexcode[1:].decode('hex')))
 
 print(rgb2hex(r, g, b))
+print(hex2rgb(rgb2hex(r, g, b)))

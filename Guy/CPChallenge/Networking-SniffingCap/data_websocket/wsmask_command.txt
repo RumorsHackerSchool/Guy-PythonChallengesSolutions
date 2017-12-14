@@ -1,0 +1,1 @@
+./wsmask  -t -m -k key -i input.bin -o output.bin

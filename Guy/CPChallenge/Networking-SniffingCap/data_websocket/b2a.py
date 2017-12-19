@@ -1,12 +1,17 @@
 import  binascii
 import base64
 
-file = open("/home/guy/Gits/PythonChallengesSolutions/Guy/CPChallenge/Networking-SniffingCap/data_websocket/unmask/test_.bin", "rb")
-file2 = open("/home/guy/Gits/PythonChallengesSolutions/Guy/CPChallenge/Networking-SniffingCap/data_websocket/unmask/test_unmask32593608out.bin", "wb")
+file = open("/home/guy/Gits/PythonChallengesSolutions/Guy/CPChallenge/Networking-SniffingCap/data_websocket/unmask/file.bin", "rb")
+file2 = open("/home/guy/Gits/PythonChallengesSolutions/Guy/CPChallenge/Networking-SniffingCap/data_websocket/unmask/file_out", "w")
 
 print(file)
 lines = file.read()
 print(lines)
+base_64_line = binascii.b2a_base64(lines)
+print(base_64_line)
+file2.write(str(base_64_line))
+file2.close()
+'''
 #converted = binascii.b2a_uu(lines)
 base_64_line = binascii.b2a_base64(lines)
 print(base_64_line)
@@ -29,3 +34,4 @@ print(final)
 converted = binascii.b2a_uu(lines)
 print(converted)
 print (base64.b64decode(converted))
+'''

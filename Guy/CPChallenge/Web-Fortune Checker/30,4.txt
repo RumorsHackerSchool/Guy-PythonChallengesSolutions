@@ -1,1 +1,0 @@
-Hello to fortune checker, fortunes are for authenticated users only

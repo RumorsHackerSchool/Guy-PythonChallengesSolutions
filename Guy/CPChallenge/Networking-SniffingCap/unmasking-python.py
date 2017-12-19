@@ -17,8 +17,8 @@ def input2hex(input):
     return list1
 
 def xor(a, b):
-    print(type(a))
-    return hex(hex(a) ^ hex(b))
+    ans = int(a, 0) ^ int(b, 0)
+    return hex(ans)
 
 
 if __name__ == "__main__":
@@ -30,13 +30,20 @@ if __name__ == "__main__":
     print(keyList)
     print(payloadList)
     count = 0
+    newList = []
     str = ''
-    print(type(keyList[0]))
     for loop in range(len(payloadList)):
         if count == 4:
             count = 0
-        str += str(hex(xor(keyList[count], payloadList[loop])))
+        newList.append(xor(keyList[count], payloadList[loop]))
+        #str += str(xor(keyList[count], payloadList[loop]))
         count +=1
-    str.replace('0x', '')
+    newList.append(xor(keyList[count], payloadList[loop]))
+    for loop in range(len(payloadList)):
+        if len(newList[loop]) == 3:
+            newStr = newList[loop][0:2] + '0' + newList[loop][-1]
+            str += newStr.replace('0x', '')
+        else:
+            str += newList[loop].replace('0x', '')
     print(str)
 

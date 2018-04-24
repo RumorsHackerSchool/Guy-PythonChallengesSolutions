@@ -1,9 +1,0 @@
-GET /favicon.ico HTTP/1.1
-Host: 192.168.11.138:8080
-Connection: keep-alive
-User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
-Accept: image/webp,image/*,*/*;q=0.8
-Referer: http://192.168.11.138:8080/login.htm
-Accept-Encoding: gzip, deflate, sdch
-Accept-Language: en-US,en;q=0.8
-

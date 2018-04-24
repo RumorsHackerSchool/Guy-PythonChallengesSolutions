@@ -1,0 +1,8 @@
+HTTP/1.1 101 Switching Protocols
+Server: AutobahnPython/0.17.2
+Upgrade: WebSocket
+Connection: Upgrade
+Sec-WebSocket-Accept: ARutkLhztGgAMwHBJ99Qv/rzAkY=
+Sec-WebSocket-Extensions: permessage-deflate
+
+Å{"action": "auth"}

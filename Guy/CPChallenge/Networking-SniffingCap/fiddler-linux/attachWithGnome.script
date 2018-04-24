@@ -1,0 +1,12 @@
+proxyInfo=`cat "$1"`
+IFS=' ' read -r -a array <<< "$proxyInfo"
+
+gsettings set org.gnome.system.proxy.http host "${array[0]}"
+gsettings set org.gnome.system.proxy.http port "${array[1]}"
+gsettings set org.gnome.system.proxy.https host "${array[2]}"
+gsettings set org.gnome.system.proxy.https port "${array[3]}"
+gsettings set org.gnome.system.proxy.ftp host "${array[4]}"
+gsettings set org.gnome.system.proxy.ftp port "${array[5]}"
+gsettings set org.gnome.system.proxy.socks host "${array[6]}"
+gsettings set org.gnome.system.proxy.socks port "${array[7]}"
+gsettings set org.gnome.system.proxy mode "${array[8]}"

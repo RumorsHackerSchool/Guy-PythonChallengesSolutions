@@ -1,0 +1,8 @@
+#!/bin/bash
+
+file=$2
+if [ -e "$file" ]; then
+    rm "$file"
+fi
+
+result=$(bash "$1" > "$file")

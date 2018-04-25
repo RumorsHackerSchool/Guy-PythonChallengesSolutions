@@ -1,0 +1,6 @@
+The authenticity of host '35.158.25.165 (35.158.25.165)' can't be established.
+ECDSA key fingerprint is SHA256:/fHKc9ZrFu/4O8PqJoS2ozkBYyT9Og8lTK2coOsWWiw.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added '35.158.25.165' (ECDSA) to the list of known hosts.
+Permission denied (publickey).
+

@@ -1,0 +1,390 @@
+No.     Time           Source                Destination           Protocol Length Info
+     45 1.525964       192.168.11.128        94.31.29.55           TCP      66     49856 → 80 [SYN] Seq=0 Win=8192 [TCP CHECKSUM INCORRECT] Len=0 MSS=1460 WS=256 SACK_PERM=1
+
+Frame 45: 66 bytes on wire (528 bits), 66 bytes captured (528 bits)
+Ethernet II, Src: Vmware_ed:61:d0 (00:0c:29:ed:61:d0), Dst: Vmware_e1:5f:85 (00:50:56:e1:5f:85)
+Internet Protocol Version 4, Src: 192.168.11.128, Dst: 94.31.29.55
+Transmission Control Protocol, Src Port: 49856, Dst Port: 80, Seq: 0, Len: 0
+    Source Port: 49856
+    Destination Port: 80
+    [Stream index: 5]
+    [TCP Segment Len: 0]
+    Sequence number: 0    (relative sequence number)
+    Acknowledgment number: 0
+    Header Length: 32 bytes
+    Flags: 0x002 (SYN)
+    Window size value: 8192
+    [Calculated window size: 8192]
+    Checksum: 0x47a5 [incorrect, should be 0x118e](maybe caused by "TCP checksum offload"?)
+    [Checksum Status: Bad]
+    [Calculated Checksum: 0x118e]
+    Urgent pointer: 0
+    Options: (12 bytes), Maximum segment size, No-Operation (NOP), Window scale, No-Operation (NOP), No-Operation (NOP), SACK permitted
+
+No.     Time           Source                Destination           Protocol Length Info
+     49 1.584546       94.31.29.55           192.168.11.128        TCP      60     80 → 49856 [SYN, ACK] Seq=0 Ack=1 Win=64240 Len=0 MSS=1460
+
+Frame 49: 60 bytes on wire (480 bits), 60 bytes captured (480 bits)
+Ethernet II, Src: Vmware_e1:5f:85 (00:50:56:e1:5f:85), Dst: Vmware_ed:61:d0 (00:0c:29:ed:61:d0)
+Internet Protocol Version 4, Src: 94.31.29.55, Dst: 192.168.11.128
+Transmission Control Protocol, Src Port: 80, Dst Port: 49856, Seq: 0, Ack: 1, Len: 0
+    Source Port: 80
+    Destination Port: 49856
+    [Stream index: 5]
+    [TCP Segment Len: 0]
+    Sequence number: 0    (relative sequence number)
+    Acknowledgment number: 1    (relative ack number)
+    Header Length: 24 bytes
+    Flags: 0x012 (SYN, ACK)
+    Window size value: 64240
+    [Calculated window size: 64240]
+    Checksum: 0x7b11 [correct]
+    [Checksum Status: Good]
+    [Calculated Checksum: 0x7b11]
+    Urgent pointer: 0
+    Options: (4 bytes), Maximum segment size
+    [SEQ/ACK analysis]
+
+No.     Time           Source                Destination           Protocol Length Info
+     50 1.584591       192.168.11.128        94.31.29.55           TCP      54     49856 → 80 [ACK] Seq=1 Ack=1 Win=4111360 [TCP CHECKSUM INCORRECT] Len=0
+
+Frame 50: 54 bytes on wire (432 bits), 54 bytes captured (432 bits)
+Ethernet II, Src: Vmware_ed:61:d0 (00:0c:29:ed:61:d0), Dst: Vmware_e1:5f:85 (00:50:56:e1:5f:85)
+Internet Protocol Version 4, Src: 192.168.11.128, Dst: 94.31.29.55
+Transmission Control Protocol, Src Port: 49856, Dst Port: 80, Seq: 1, Ack: 1, Len: 0
+    Source Port: 49856
+    Destination Port: 80
+    [Stream index: 5]
+    [TCP Segment Len: 0]
+    Sequence number: 1    (relative sequence number)
+    Acknowledgment number: 1    (relative ack number)
+    Header Length: 20 bytes
+    Flags: 0x010 (ACK)
+    Window size value: 64240
+    [Calculated window size: 4111360]
+    [Window size scaling factor: -2 (no window scaling used)]
+    Checksum: 0x4799 [incorrect, should be 0x92ce](maybe caused by "TCP checksum offload"?)
+    [Checksum Status: Bad]
+    [Calculated Checksum: 0x92ce]
+    Urgent pointer: 0
+    [SEQ/ACK analysis]
+
+No.     Time           Source                Destination           Protocol Length Info
+     51 1.584899       192.168.11.128        94.31.29.55           HTTP     443    GET /font-awesome/4.3.0/css/font-awesome.min.css HTTP/1.1 
+
+Frame 51: 443 bytes on wire (3544 bits), 443 bytes captured (3544 bits)
+Ethernet II, Src: Vmware_ed:61:d0 (00:0c:29:ed:61:d0), Dst: Vmware_e1:5f:85 (00:50:56:e1:5f:85)
+Internet Protocol Version 4, Src: 192.168.11.128, Dst: 94.31.29.55
+Transmission Control Protocol, Src Port: 49856, Dst Port: 80, Seq: 1, Ack: 1, Len: 389
+    Source Port: 49856
+    Destination Port: 80
+    [Stream index: 5]
+    [TCP Segment Len: 389]
+    Sequence number: 1    (relative sequence number)
+    [Next sequence number: 390    (relative sequence number)]
+    Acknowledgment number: 1    (relative ack number)
+    Header Length: 20 bytes
+    Flags: 0x018 (PSH, ACK)
+    Window size value: 64240
+    [Calculated window size: 4111360]
+    [Window size scaling factor: -2 (no window scaling used)]
+    Checksum: 0x491e [incorrect, should be 0x2c02](maybe caused by "TCP checksum offload"?)
+    [Checksum Status: Bad]
+    [Calculated Checksum: 0x2c02]
+    Urgent pointer: 0
+    [SEQ/ACK analysis]
+Hypertext Transfer Protocol
+    GET /font-awesome/4.3.0/css/font-awesome.min.css HTTP/1.1\r\n
+    Host: maxcdn.bootstrapcdn.com\r\n
+    Connection: keep-alive\r\n
+    User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36\r\n
+    Accept: text/css,*/*;q=0.1\r\n
+    Referer: http://192.168.11.138:8080/login.htm\r\n
+    Accept-Encoding: gzip, deflate, sdch\r\n
+    Accept-Language: en-US,en;q=0.8\r\n
+    \r\n
+    [Full request URI: http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css]
+    [HTTP request 1/1]
+    [Response in frame: 67]
+
+No.     Time           Source                Destination           Protocol Length Info
+     52 1.585384       94.31.29.55           192.168.11.128        TCP      60     80 → 49856 [ACK] Seq=1 Ack=390 Win=4111360 Len=0
+
+Frame 52: 60 bytes on wire (480 bits), 60 bytes captured (480 bits)
+Ethernet II, Src: Vmware_e1:5f:85 (00:50:56:e1:5f:85), Dst: Vmware_ed:61:d0 (00:0c:29:ed:61:d0)
+Internet Protocol Version 4, Src: 94.31.29.55, Dst: 192.168.11.128
+Transmission Control Protocol, Src Port: 80, Dst Port: 49856, Seq: 1, Ack: 390, Len: 0
+    Source Port: 80
+    Destination Port: 49856
+    [Stream index: 5]
+    [TCP Segment Len: 0]
+    Sequence number: 1    (relative sequence number)
+    Acknowledgment number: 390    (relative ack number)
+    Header Length: 20 bytes
+    Flags: 0x010 (ACK)
+    Window size value: 64240
+    [Calculated window size: 4111360]
+    [Window size scaling factor: -2 (no window scaling used)]
+    Checksum: 0x9149 [correct]
+    [Checksum Status: Good]
+    [Calculated Checksum: 0x9149]
+    Urgent pointer: 0
+    [SEQ/ACK analysis]
+
+No.     Time           Source                Destination           Protocol Length Info
+     62 1.654552       94.31.29.55           192.168.11.128        TCP      1514   [TCP segment of a reassembled PDU]
+
+Frame 62: 1514 bytes on wire (12112 bits), 1514 bytes captured (12112 bits)
+Ethernet II, Src: Vmware_e1:5f:85 (00:50:56:e1:5f:85), Dst: Vmware_ed:61:d0 (00:0c:29:ed:61:d0)
+Internet Protocol Version 4, Src: 94.31.29.55, Dst: 192.168.11.128
+Transmission Control Protocol, Src Port: 80, Dst Port: 49856, Seq: 1, Ack: 390, Len: 1460
+    Source Port: 80
+    Destination Port: 49856
+    [Stream index: 5]
+    [TCP Segment Len: 1460]
+    Sequence number: 1    (relative sequence number)
+    [Next sequence number: 1461    (relative sequence number)]
+    Acknowledgment number: 390    (relative ack number)
+    Header Length: 20 bytes
+    Flags: 0x010 (ACK)
+    Window size value: 64240
+    [Calculated window size: 4111360]
+    [Window size scaling factor: -2 (no window scaling used)]
+    Checksum: 0x5723 [correct]
+    [Checksum Status: Good]
+    [Calculated Checksum: 0x5723]
+    Urgent pointer: 0
+    [SEQ/ACK analysis]
+    [Reassembled PDU in frame: 67]
+    TCP segment data (1460 bytes)
+
+No.     Time           Source                Destination           Protocol Length Info
+     63 1.654557       94.31.29.55           192.168.11.128        TCP      1514   [TCP segment of a reassembled PDU]
+
+Frame 63: 1514 bytes on wire (12112 bits), 1514 bytes captured (12112 bits)
+Ethernet II, Src: Vmware_e1:5f:85 (00:50:56:e1:5f:85), Dst: Vmware_ed:61:d0 (00:0c:29:ed:61:d0)
+Internet Protocol Version 4, Src: 94.31.29.55, Dst: 192.168.11.128
+Transmission Control Protocol, Src Port: 80, Dst Port: 49856, Seq: 1461, Ack: 390, Len: 1460
+    Source Port: 80
+    Destination Port: 49856
+    [Stream index: 5]
+    [TCP Segment Len: 1460]
+    Sequence number: 1461    (relative sequence number)
+    [Next sequence number: 2921    (relative sequence number)]
+    Acknowledgment number: 390    (relative ack number)
+    Header Length: 20 bytes
+    Flags: 0x010 (ACK)
+    Window size value: 64240
+    [Calculated window size: 4111360]
+    [Window size scaling factor: -2 (no window scaling used)]
+    Checksum: 0xa305 [correct]
+    [Checksum Status: Good]
+    [Calculated Checksum: 0xa305]
+    Urgent pointer: 0
+    [SEQ/ACK analysis]
+    [Reassembled PDU in frame: 67]
+    TCP segment data (1460 bytes)
+
+No.     Time           Source                Destination           Protocol Length Info
+     64 1.654558       94.31.29.55           192.168.11.128        TCP      1514   [TCP segment of a reassembled PDU]
+
+Frame 64: 1514 bytes on wire (12112 bits), 1514 bytes captured (12112 bits)
+Ethernet II, Src: Vmware_e1:5f:85 (00:50:56:e1:5f:85), Dst: Vmware_ed:61:d0 (00:0c:29:ed:61:d0)
+Internet Protocol Version 4, Src: 94.31.29.55, Dst: 192.168.11.128
+Transmission Control Protocol, Src Port: 80, Dst Port: 49856, Seq: 2921, Ack: 390, Len: 1460
+    Source Port: 80
+    Destination Port: 49856
+    [Stream index: 5]
+    [TCP Segment Len: 1460]
+    Sequence number: 2921    (relative sequence number)
+    [Next sequence number: 4381    (relative sequence number)]
+    Acknowledgment number: 390    (relative ack number)
+    Header Length: 20 bytes
+    Flags: 0x018 (PSH, ACK)
+    Window size value: 64240
+    [Calculated window size: 4111360]
+    [Window size scaling factor: -2 (no window scaling used)]
+    Checksum: 0x540a [correct]
+    [Checksum Status: Good]
+    [Calculated Checksum: 0x540a]
+    Urgent pointer: 0
+    [SEQ/ACK analysis]
+    [Reassembled PDU in frame: 67]
+    TCP segment data (1460 bytes)
+
+No.     Time           Source                Destination           Protocol Length Info
+     65 1.654615       192.168.11.128        94.31.29.55           TCP      54     49856 → 80 [ACK] Seq=390 Ack=4381 Win=4111360 [TCP CHECKSUM INCORRECT] Len=0
+
+Frame 65: 54 bytes on wire (432 bits), 54 bytes captured (432 bits)
+Ethernet II, Src: Vmware_ed:61:d0 (00:0c:29:ed:61:d0), Dst: Vmware_e1:5f:85 (00:50:56:e1:5f:85)
+Internet Protocol Version 4, Src: 192.168.11.128, Dst: 94.31.29.55
+Transmission Control Protocol, Src Port: 49856, Dst Port: 80, Seq: 390, Ack: 4381, Len: 0
+    Source Port: 49856
+    Destination Port: 80
+    [Stream index: 5]
+    [TCP Segment Len: 0]
+    Sequence number: 390    (relative sequence number)
+    Acknowledgment number: 4381    (relative ack number)
+    Header Length: 20 bytes
+    Flags: 0x010 (ACK)
+    Window size value: 64240
+    [Calculated window size: 4111360]
+    [Window size scaling factor: -2 (no window scaling used)]
+    Checksum: 0x4799 [incorrect, should be 0x802d](maybe caused by "TCP checksum offload"?)
+    [Checksum Status: Bad]
+    [Calculated Checksum: 0x802d]
+    Urgent pointer: 0
+    [SEQ/ACK analysis]
+
+No.     Time           Source                Destination           Protocol Length Info
+     66 1.655701       94.31.29.55           192.168.11.128        TCP      1514   [TCP segment of a reassembled PDU]
+
+Frame 66: 1514 bytes on wire (12112 bits), 1514 bytes captured (12112 bits)
+Ethernet II, Src: Vmware_e1:5f:85 (00:50:56:e1:5f:85), Dst: Vmware_ed:61:d0 (00:0c:29:ed:61:d0)
+Internet Protocol Version 4, Src: 94.31.29.55, Dst: 192.168.11.128
+Transmission Control Protocol, Src Port: 80, Dst Port: 49856, Seq: 4381, Ack: 390, Len: 1460
+    Source Port: 80
+    Destination Port: 49856
+    [Stream index: 5]
+    [TCP Segment Len: 1460]
+    Sequence number: 4381    (relative sequence number)
+    [Next sequence number: 5841    (relative sequence number)]
+    Acknowledgment number: 390    (relative ack number)
+    Header Length: 20 bytes
+    Flags: 0x010 (ACK)
+    Window size value: 64240
+    [Calculated window size: 4111360]
+    [Window size scaling factor: -2 (no window scaling used)]
+    Checksum: 0x0a79 [correct]
+    [Checksum Status: Good]
+    [Calculated Checksum: 0x0a79]
+    Urgent pointer: 0
+    [SEQ/ACK analysis]
+    [Reassembled PDU in frame: 67]
+    TCP segment data (1460 bytes)
+
+No.     Time           Source                Destination           Protocol Length Info
+     67 1.655707       94.31.29.55           192.168.11.128        HTTP     670    HTTP/1.1 200 OK  (text/css)
+
+Frame 67: 670 bytes on wire (5360 bits), 670 bytes captured (5360 bits)
+Ethernet II, Src: Vmware_e1:5f:85 (00:50:56:e1:5f:85), Dst: Vmware_ed:61:d0 (00:0c:29:ed:61:d0)
+Internet Protocol Version 4, Src: 94.31.29.55, Dst: 192.168.11.128
+Transmission Control Protocol, Src Port: 80, Dst Port: 49856, Seq: 5841, Ack: 390, Len: 616
+    Source Port: 80
+    Destination Port: 49856
+    [Stream index: 5]
+    [TCP Segment Len: 616]
+    Sequence number: 5841    (relative sequence number)
+    [Next sequence number: 6457    (relative sequence number)]
+    Acknowledgment number: 390    (relative ack number)
+    Header Length: 20 bytes
+    Flags: 0x018 (PSH, ACK)
+    Window size value: 64240
+    [Calculated window size: 4111360]
+    [Window size scaling factor: -2 (no window scaling used)]
+    Checksum: 0xa013 [correct]
+    [Checksum Status: Good]
+    [Calculated Checksum: 0xa013]
+    Urgent pointer: 0
+    [SEQ/ACK analysis]
+    TCP segment data (616 bytes)
+[5 Reassembled TCP Segments (6456 bytes): #62(1460), #63(1460), #64(1460), #66(1460), #67(616)]
+Hypertext Transfer Protocol
+    HTTP/1.1 200 OK\r\n
+    Date: Wed, 08 Mar 2017 16:44:14 GMT\r\n
+    Content-Type: text/css\r\n
+    Transfer-Encoding: chunked\r\n
+    Connection: keep-alive\r\n
+    Last-Modified: Thu, 22 Jan 2015 19:53:38 GMT\r\n
+    ETag: W/"04425bbdc6243fc6e54bf8984fe50330"\r\n
+    Server: NetDNA-cache/2.2\r\n
+    Expires: Sat, 03 Mar 2018 16:44:14 GMT\r\n
+    Cache-Control: max-age=31104000\r\n
+    Vary: Accept-Encoding\r\n
+    Access-Control-Allow-Origin: *\r\n
+    X-Hello-Human: Say hello back! @getBootstrapCDN on Twitter\r\n
+    X-Cache: HIT\r\n
+    Content-Encoding: gzip\r\n
+    \r\n
+    [HTTP response 1/1]
+    [Time since request: 0.070808000 seconds]
+    [Request in frame: 51]
+    HTTP chunked response
+    Content-encoded entity body (gzip): 5969 bytes -> 23739 bytes
+    File Data: 23739 bytes
+Line-based text data: text/css
+    /*!\n
+     *  Font Awesome 4.3.0 by @davegandy - http://fontawesome.io - @fontawesome\n
+     *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)\n
+     [truncated] */@font-face{font-family:'FontAwesome';src:url('../fonts/fontawesome-webfont.eot?v=4.3.0');src:url('../fonts/fontawesome-webfont.eot?#iefix&v=4.3.0') format('embedded-opentype'),url('../fonts/fontawesome-webfont.woff2?v=4.3.0'
+
+No.     Time           Source                Destination           Protocol Length Info
+     68 1.655736       192.168.11.128        94.31.29.55           TCP      54     49856 → 80 [ACK] Seq=390 Ack=6457 Win=4111360 [TCP CHECKSUM INCORRECT] Len=0
+
+Frame 68: 54 bytes on wire (432 bits), 54 bytes captured (432 bits)
+Ethernet II, Src: Vmware_ed:61:d0 (00:0c:29:ed:61:d0), Dst: Vmware_e1:5f:85 (00:50:56:e1:5f:85)
+Internet Protocol Version 4, Src: 192.168.11.128, Dst: 94.31.29.55
+Transmission Control Protocol, Src Port: 49856, Dst Port: 80, Seq: 390, Ack: 6457, Len: 0
+    Source Port: 49856
+    Destination Port: 80
+    [Stream index: 5]
+    [TCP Segment Len: 0]
+    Sequence number: 390    (relative sequence number)
+    Acknowledgment number: 6457    (relative ack number)
+    Header Length: 20 bytes
+    Flags: 0x010 (ACK)
+    Window size value: 64240
+    [Calculated window size: 4111360]
+    [Window size scaling factor: -2 (no window scaling used)]
+    Checksum: 0x4799 [incorrect, should be 0x7811](maybe caused by "TCP checksum offload"?)
+    [Checksum Status: Bad]
+    [Calculated Checksum: 0x7811]
+    Urgent pointer: 0
+    [SEQ/ACK analysis]
+
+No.     Time           Source                Destination           Protocol Length Info
+    206 5.652601       94.31.29.55           192.168.11.128        TCP      60     80 → 49856 [FIN, PSH, ACK] Seq=6457 Ack=390 Win=4111360 Len=0
+
+Frame 206: 60 bytes on wire (480 bits), 60 bytes captured (480 bits)
+Ethernet II, Src: Vmware_e1:5f:85 (00:50:56:e1:5f:85), Dst: Vmware_ed:61:d0 (00:0c:29:ed:61:d0)
+Internet Protocol Version 4, Src: 94.31.29.55, Dst: 192.168.11.128
+Transmission Control Protocol, Src Port: 80, Dst Port: 49856, Seq: 6457, Ack: 390, Len: 0
+    Source Port: 80
+    Destination Port: 49856
+    [Stream index: 5]
+    [TCP Segment Len: 0]
+    Sequence number: 6457    (relative sequence number)
+    Acknowledgment number: 390    (relative ack number)
+    Header Length: 20 bytes
+    Flags: 0x019 (FIN, PSH, ACK)
+    Window size value: 64240
+    [Calculated window size: 4111360]
+    [Window size scaling factor: -2 (no window scaling used)]
+    Checksum: 0x7808 [correct]
+    [Checksum Status: Good]
+    [Calculated Checksum: 0x7808]
+    Urgent pointer: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+    207 5.652631       192.168.11.128        94.31.29.55           TCP      54     49856 → 80 [ACK] Seq=390 Ack=6458 Win=4111360 [TCP CHECKSUM INCORRECT] Len=0
+
+Frame 207: 54 bytes on wire (432 bits), 54 bytes captured (432 bits)
+Ethernet II, Src: Vmware_ed:61:d0 (00:0c:29:ed:61:d0), Dst: Vmware_e1:5f:85 (00:50:56:e1:5f:85)
+Internet Protocol Version 4, Src: 192.168.11.128, Dst: 94.31.29.55
+Transmission Control Protocol, Src Port: 49856, Dst Port: 80, Seq: 390, Ack: 6458, Len: 0
+    Source Port: 49856
+    Destination Port: 80
+    [Stream index: 5]
+    [TCP Segment Len: 0]
+    Sequence number: 390    (relative sequence number)
+    Acknowledgment number: 6458    (relative ack number)
+    Header Length: 20 bytes
+    Flags: 0x010 (ACK)
+    Window size value: 64240
+    [Calculated window size: 4111360]
+    [Window size scaling factor: -2 (no window scaling used)]
+    Checksum: 0x4799 [incorrect, should be 0x7810](maybe caused by "TCP checksum offload"?)
+    [Checksum Status: Bad]
+    [Calculated Checksum: 0x7810]
+    Urgent pointer: 0
+    [SEQ/ACK analysis]

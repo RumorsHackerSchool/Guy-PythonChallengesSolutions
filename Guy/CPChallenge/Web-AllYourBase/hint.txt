@@ -1,3 +1,0 @@
-The js code you are looking into is minified/compressed code That means the actual code is converted by replacing all the real variable names to (a, b, c,...) making it hard to copy for others and to load it faster on the website.
-
-

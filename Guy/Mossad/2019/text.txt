@@ -1,0 +1,31 @@
+	
+DvirRonaldo 2 days ago [-]
+
+First Challenge Solution: Mossad 2019 Challenge Start: https://r-u-ready-4.it/ Every line in the image is binary 8-bit number that will give you an ip address : 35.246.158.51
+Challenge-1 :Link http://3d375032374147a7865753e4bbc92682.xyz / http://35.246.158.51
+
+Download app.apk from http://3d375032374147a7865753e4bbc92682.xyz/static/app.apk Remember your Client ID - mine is 854279b4c89e4b5c9722352c3f9f1d6c You will user it as "Seeder" property in the app //////////////////////////////////////////////////////////////////////////////////////////////// using WireShark (or any other packet snipper) we can see that the login button does this:
+
+POST /auth/v2 HTTP/1.1si user-agent: iWalk-v2 content-type: application/json; charset=utf-8 accept-encoding: gzip content-length: 29 host: 35.246.158.51:8070 {"Seed":"admin","Password":"admin "}HTTP/1.1 200 OK Content-Type: application/json Date: Wed, 08 May 2019 21:49:05 GMT Content-Length: 47
+
+{"IsValid":false,"LockURL":"","Time":149646302} ///////////////////////////////////////////////////////
+
+Using http://www.javadecompilers.com/, i Decompiled the apk, and got a lock at the Manifest < <xml version="1.0" encoding="utf-8" ....... <activity android:configChanges="density|fontScale|keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize" android:hardwareAccelerated="true" android:launchMode="singleTop" android:name="com.iwalk.locksmither.MainActivity" .... .....
+
+The line "look for us on github.com" got my attention, so i looked for iwalk.locksmither in github and found "iwalk-locksmithers" linke: https://github.com/iwalk-locksmithers-app the server source code was there. In the code, there are a few comments that can help
+
+https://github.com/iwalk-locksmithers-app/server/blob/master... link 70 points us to the auth-1 weeknes.
+
+the part of "for currentIndex < len(lock.Password) && currentIndex < len(loginData.Password) { if lock.Password[currentIndex] != loginData.Password[currentIndex] { break } //OG: securing against bruteforce attempts... ;-) time.Sleep(30 * time.Millisecond) currentIndex++ }"
+
+the securing aginst bruteforce (tyring all combinations) is the weeknes. The idea behind for hacking the password is to try only one char at first. if we get a 30ms dealy, it means we got the 1st char right, so then we can check the next one, so we will try 2 chars (the 1st we know, the second we will guess) if we will get 60 ms +- dealy then we got th 2nd char and we will try the third one, and again and again, until we will get the password.
+
+To solve it, it wrote a simple c# code that does in a loop http push to the server every time we try to add a new char to the password, and if we got a dealy that is +- 30ms more then the last try, we add that char our final password the uri is http://35.246.158.51:8070/auth/v1_1 and user agent is ed9ae2c0-9b15-4556-a393-23d500675d4b (as writen in the server) I did some avg calcs of the dealys The password length is 32 with hexa char (didnt know that until i guessed the password) we can know that the password is correct when we get back "IsValid":true" *Time we get is in nano Seconds and not ms
+
+After I enterd the pasword and cliend id, i got a link for a token and a linke for challenge 2
+
+http://759d8eba52184f538c8a4525680cfb33.xyz/
+
+Challenge-2 http://759d8eba52184f538c8a4525680cfb33.xyz/
+
+reply
